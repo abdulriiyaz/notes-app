@@ -18,10 +18,19 @@ code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  min-height: 100vh;
+}
+
+.dark-mode{
+  background-color: #010400;
+}
+
+.dark-mode h1{
+  color: white;
 }
 
 .note{
-  background-color: #eff68a;
+  background-color: #ECCBD9;
   border-radius: 10px;
   padding: 1rem;
   min-height: 170px;
@@ -43,25 +52,26 @@ code {
 }
 
 .note.new{
-  background-color: #67d7cc;
+  background-color: #59C3C3;
 }
 
 .save{
   background-color: #e1e1e1;
   border: none;
   border-radius: 15px;
-  padding: 5px 10px 5px 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 .save:hover{
-  background-color: #ededed;
+  background-color: #CAD2C5;
   cursor: pointer;
 }
 
 textarea{
   border: none;
   resize: none;
-  background-color: #67d7cc;
+  background-color: #59C3C3;
+;
 }
 
 textarea:focus{
@@ -70,4 +80,28 @@ textarea:focus{
 
 .delete-icon{
   cursor: pointer;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.search input{
+  border: none;
+  background-color:rgb(233, 233, 233);
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
